@@ -1,10 +1,24 @@
+:root {
+  --black: #000;
+  --red: #f42;
+  --white: #fff;
+}
+
 /**
 *
 * globals
 *
 */
+
 html,
-body {
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
 }
 
@@ -15,6 +29,9 @@ body {
 */
 .text-center {
   text-align: center;
+}
+.d-inline-flex {
+  display: inline-flex;
 }
 .d-flex {
   display: flex;
@@ -36,7 +53,7 @@ body {
 *
 */
 .title-mb-xs {
-  margin-bottom: .25rem;
+  margin-bottom: 0.25rem;
 }
 .title-mb-md {
   margin-bottom: 0.875rem;
@@ -63,6 +80,50 @@ body {
 
 /**
 *
+* section
+*
+*/
+.section__title {
+  display: flex;
+}
+.section-title__link {
+  color: var(--red);
+  text-decoration: none;
+  padding-right: 5px;
+}
+.section-title__link:hover {
+  cursor: pointer;
+  color: var(--black);
+}
+.section-title__link:hover .arrow--right:after {
+  border-right: 3px solid var(--black);
+  border-top: 3px solid var(--black);
+}
+
+/**
+*
+* arrows
+*
+*/
+.arrow--right {
+  height: 8px;
+  width: 8px;
+}
+.arrow--right:after {
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  border-right: 3px solid var(--red);
+  border-top: 3px solid var(--red);
+  content: "";
+  display: inline-block;
+  height: 8px;
+  transform: rotate(45deg);
+  vertical-align: middle;
+  width: 8px;
+}
+
+/**
+*
 * four-card-row
 *
 */
@@ -70,7 +131,16 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-
+.four-cards__card {
+  /* max-width: 294px; */
+}
+.four-cards__img {
+  width: 75px;
+  height: 75px;
+  object-fit: cover;
+}
+@media (min-width: 768px) {
+}
 /**
 *
 * footer
