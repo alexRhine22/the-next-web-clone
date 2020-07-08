@@ -52,30 +52,37 @@ p {
 * normal helpers
 *
 */
-.title-mb-xs {
+.title-mb--xs {
   margin-bottom: 0.25rem;
 }
-.title-mb-md {
+.title-mb--md {
   margin-bottom: 0.875rem;
 }
-.title-mb-lg {
+.title-mb--lg {
   margin-bottom: 1.5rem;
 }
 
 .text--md {
+  font-size: 13px;
+  line-height: 19.5px;
 }
 
+.title--md {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
 .title--lg {
   font-family: Avalon, sans-serif;
-  font-size: 1.75rem;
+  font-size: 28px;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 32px;
 }
 .title--xl {
   font-family: Avalon, sans-serif;
-  font-size: 3.5rem;
+  font-size: 56px;
   font-weight: 700;
-  line-height: 3.5rem;
+  line-height: 56px;
 }
 
 /**
@@ -148,13 +155,17 @@ p {
 */
 .footer {
 }
+
 .footer__legal {
   background-color: var(--black);
   color: #aaa;
+  padding: 3rem 0;
+  text-align: center;
 }
+
 .footer__links {
   background-color: #131313;
-  padding: 2.5rem 1.25rem;
+  padding: 48px 0 32px;
 }
 .footer__social-links,
 .footer__word-links {
@@ -168,27 +179,21 @@ p {
 .footer__social-links li {
   margin: 0 0.25rem;
 }
-.footer__word-links li {
-  display: inline-block;
-  font-family: Shentox, sans-serif;
-  font-size: 0.8125rem;
-  font-weight: 500;
-  line-height: 1.5rem;
-  margin: 0 0.25rem;
-  text-transform: uppercase;
-}
+
 .footer__social-links a,
 .footer__word-links a {
   display: block;
   text-decoration: none;
+  color: #aaa;
 }
+
 .footer__social-links {
   margin-bottom: 1.5rem;
 }
 .footer__social-links a {
-  border: 2px solid transparent;
   background-color: #333;
   border-radius: 50%;
+  border: 2px solid transparent;
   height: 38px;
   position: relative;
   width: 38px;
@@ -204,10 +209,23 @@ p {
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.footer__word-links {
+
+
+.footer__word-links li {
+  display: inline-block;
+  font-family: Shentox, sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0 4px;
+  text-transform: uppercase;
 }
+.footer__word-links a:hover {
+  color: var(--white);
+}
+
 @media (min-width: 768px) {
   .footer__social-links li {
-    margin: 0 0.5rem;
+    margin: 0 8px;
   }
 }
