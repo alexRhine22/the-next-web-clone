@@ -25,32 +25,84 @@
       <div class="header__logo">
         <img src="/images/icons/tnw-logo.svg" alt="tnw-logo" />
       </div>
-      
+
       <nav>
         <ul class="header__nav-list">
           <li>
-            <a href="">Latest</a>
+            <a href="#none">Latest</a>
           </li>
           <li>
-            <a href="">Hard Fork</a>
+            <a href="#none">Hard Fork</a>
           </li>
           <li>
-            <a href="">Plugged</a>
+            <a href="#none">Plugged</a>
           </li>
           <li>
-            <a href="">Readme</a>
+            <a href="#none">Readme</a>
           </li>
           <li>
-            <a href="">Growth Quarters</a>
+            <a href="#none">Growth Quarters</a>
           </li>
           <li>
-            <a href="">Neural</a>
+            <a href="#none">Neural</a>
           </li>
         </ul>
       </nav>
+
+      <div class="mobile-nav-button active">
+        <span class="mobile-nav-button__bar active"></span>
+        <span class="mobile-nav-button__bar active"></span>
+        <span class="mobile-nav-button__bar active"></span>
+      </div>
     </header>
 
-    <section>
+    <aside class="mobile-nav">
+      <div class="mobile-nav__content">
+        <div class="mobile-nav__column">
+          <nav>
+            <h1 class="mobile-nav__title">sections</h1>
+            <ul class="mobile-nav__list">
+              <li><a href="">latest</a></li>
+              <li><a href="">insights</a></li>
+              <li><a href="">plugged</a></li>
+              <li><a href="">hard fork</a></li>
+              <li><a href="">ReadMe</a></li>
+              <li><a href="">growth quarters</a></li>
+              <li><a href="">neural</a></li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="mobile-nav__column">
+          <nav>
+            <h1 class="mobile-nav__title">about tnw</h1>
+            <ul class="mobile-nav__list">
+              <li><a href="">about</a></li>
+              <li><a href="">advertise</a></li>
+              <li><a href="">jobs</a></li>
+              <li><a href="">contact</a></li>
+              <li><a href="">terms & conditions</a></li>
+            </ul>
+          </nav>
+
+          <nav>
+            <h1 class="mobile-nav__title">tnw sites</h1>
+            <ul class="mobile-nav__list">
+              <li><a href="">events</a></li>
+              <li><a href="">news</a></li>
+              <li><a href="">TNW 2020</a></li>
+              <li><a href="">TNW X</a></li>
+              <li><a href="">index</a></li>
+              <li><a href="">spaces</a></li>
+              <li><a href="">deals</a></li>
+              <li><a href="">answers</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+    <section style="display: none;">
       <h1 class="section__title title--lg">
         <a class="section-title__link" href="#none">
           Latest news
@@ -78,7 +130,7 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" style="display: none;">
       <div class="footer__links">
         <ul class="footer__social-links">
           <li>
@@ -103,17 +155,17 @@
           </li>
           <li>
             <a href="#none">
-              <img src="" alt="pinterest" />
+              <img src="images/icons/pinterest.svg" alt="pinterest" />
             </a>
           </li>
           <li>
             <a href="#none">
-              <img src="" alt="wifi" />
+              <img src="images/icons/wifi.svg" alt="wifi" />
             </a>
           </li>
           <li>
             <a href="#none">
-              <img src="" alt="mail" />
+              <img src="/images/icons/mail.png" alt="mail" />
             </a>
           </li>
         </ul>
