@@ -143,21 +143,22 @@ p {
   height: 100%;
   position: relative;
   width: 106px;
+  cursor: pointer;
 }
 .header__logo img {
-  transform: translateY(32px);
-  transform .4s ease,-webkit-transform .4s ease;
+  /* transform: translateY(32px); */
+  /* transform .4s ease,-webkit-transform .4s ease; */
   height: 16px;
-  /* left: 50%; */
-  /* margin: 0; */
+  left: 50%;
+  margin: 0;
   position: absolute;
-  /* top: 50%; */
-  /* transform: translate(-50%, -50%); */
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 66px;
 }
 
 .header__nav-list {
-  display: flex;
+  display: none;
   margin: 0;
   padding: 0;
   list-style-type: none;
