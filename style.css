@@ -22,27 +22,6 @@ p {
   margin: 0;
 }
 
-/**
-*
-* bootstrap helpers
-*
-*/
-.text-center {
-  text-align: center;
-}
-.d-inline-flex {
-  display: inline-flex;
-}
-.d-flex {
-  display: flex;
-}
-.justify-content-center {
-  justify-content: center;
-}
-.align-items-center {
-  align-items: center;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1192px;
@@ -67,6 +46,10 @@ p {
 .text--md {
   font-size: 13px;
   line-height: 19.5px;
+}
+.text--lg {
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .title--md {
@@ -95,6 +78,7 @@ p {
 .section-title a {
   color: var(--red);
   text-decoration: none;
+  padding-right: 5px;
 }
 .section-title__container {
   display: flex;
@@ -376,7 +360,8 @@ p {
   align-items: center;
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 8px 0;
+  /* padding: 8px 0; */
+  /* margin: 0 15px; */
 }
 .card__img {
   height: 75px;
@@ -411,16 +396,19 @@ p {
   .card {
     flex-wrap: wrap;
     flex: 0 0 calc(100% / 3);
+    flex: 0 0 31%;
     height: 100%;
-    padding: 8px 0;
-    width: 100%;
+    padding: 8px;
+    /* padding-right: 3px; */
+    /* margin: 8px; */
+    /* width: 100%; */
   }
   .card__img {
     height: 95%;
     object-fit: cover;
     padding-bottom: 8px;
     padding-right: 0;
-    width: 95%;
+    width: 100%;
   }
   .card__title {
     display: block;
