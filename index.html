@@ -21,6 +21,7 @@
     <title>TNW</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="header">
       <div class="header__logo">
         <img src="/images/icons/tnw-logo.svg" alt="tnw-logo" />
@@ -49,89 +50,243 @@
         </ul>
       </nav>
 
-      <div class="mobile-nav-button active">
-        <span class="mobile-nav-button__bar active"></span>
-        <span class="mobile-nav-button__bar active"></span>
-        <span class="mobile-nav-button__bar active"></span>
+      <div id="mobile-nav-button" class="mobile-nav-button">
+        <span class="mobile-nav-button__bar"></span>
+        <span class="mobile-nav-button__bar"></span>
+        <span class="mobile-nav-button__bar"></span>
       </div>
+
+      <aside id="mobile-nav" class="mobile-nav">
+        <div class="mobile-nav__content">
+          <nav class="mobile-nav__social-nav">
+            <ul class="mobile-nav__social-nav-list">
+              <li>
+                <a href="#none">
+                  <img src="images/icons/mail.png" alt="mail" />
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="images/icons/facebook.svg" alt="facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="images/icons/twitter.svg" alt="twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="images/icons/linkedin.svg" alt="linkedin" />
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="images/icons/youtube.svg" alt="youtube" />
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="images/icons/pinterest.svg" alt="pintrest" />
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="images/icons/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="#none">
+                  <img src="images/icons/wifi.svg" alt="wifi" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mobile-nav__column">
+            <nav>
+              <h1 class="mobile-nav__title">sections</h1>
+              <ul class="mobile-nav__list">
+                <li><a href="#none">latest</a></li>
+                <li><a href="#none">insights</a></li>
+                <li><a href="#none">plugged</a></li>
+                <li><a href="#none">hard fork</a></li>
+                <li><a href="#none">ReadMe</a></li>
+                <li><a href="#none">growth quarters</a></li>
+                <li><a href="#none">neural</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="mobile-nav__column">
+            <nav>
+              <h1 class="mobile-nav__title">about tnw</h1>
+              <ul class="mobile-nav__list">
+                <li><a href="#none">about</a></li>
+                <li><a href="#none">advertise</a></li>
+                <li><a href="#none">jobs</a></li>
+                <li><a href="#none">contact</a></li>
+                <li><a href="#none">terms & conditions</a></li>
+              </ul>
+            </nav>
+
+            <nav>
+              <h1 class="mobile-nav__title">tnw sites</h1>
+              <ul class="mobile-nav__list">
+                <li><a href="#none">events</a></li>
+                <li><a href="#none">news</a></li>
+                <li><a href="#none">TNW 2020</a></li>
+                <li><a href="#none">TNW X</a></li>
+                <li><a href="#none">index</a></li>
+                <li><a href="#none">spaces</a></li>
+                <li><a href="#none">deals</a></li>
+                <li><a href="#none">answers</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </aside>
     </header>
+    <!-- END HEADER -->
 
-    <aside class="mobile-nav">
-      <div class="mobile-nav__content">
-        <div class="mobile-nav__column">
-          <nav>
-            <h1 class="mobile-nav__title">sections</h1>
-            <ul class="mobile-nav__list">
-              <li><a href="">latest</a></li>
-              <li><a href="">insights</a></li>
-              <li><a href="">plugged</a></li>
-              <li><a href="">hard fork</a></li>
-              <li><a href="">ReadMe</a></li>
-              <li><a href="">growth quarters</a></li>
-              <li><a href="">neural</a></li>
-            </ul>
-          </nav>
+    <!-- SECTION: Latest Deals -->
+    <section class="section-margin">
+      <div class="container card__container">
+        <div class="section-title__container">
+          <h1 class="section-title title--lg">
+            <a href="#none">
+              Latest deals
+            </a>
+          </h1>
+          <span class="arrow--right"></span>
         </div>
 
-        <div class="mobile-nav__column">
-          <nav>
-            <h1 class="mobile-nav__title">about tnw</h1>
-            <ul class="mobile-nav__list">
-              <li><a href="">about</a></li>
-              <li><a href="">advertise</a></li>
-              <li><a href="">jobs</a></li>
-              <li><a href="">contact</a></li>
-              <li><a href="">terms & conditions</a></li>
-            </ul>
-          </nav>
-
-          <nav>
-            <h1 class="mobile-nav__title">tnw sites</h1>
-            <ul class="mobile-nav__list">
-              <li><a href="">events</a></li>
-              <li><a href="">news</a></li>
-              <li><a href="">TNW 2020</a></li>
-              <li><a href="">TNW X</a></li>
-              <li><a href="">index</a></li>
-              <li><a href="">spaces</a></li>
-              <li><a href="">deals</a></li>
-              <li><a href="">answers</a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </aside>
-
-    <section style="display: none;">
-      <h1 class="section__title title--lg">
-        <a class="section-title__link" href="#none">
-          Latest news
-        </a>
-        <div class="arrow--right"></div>
-      </h1>
-
-      <div class="four-cards">
-        <div class="four-cards__cards">
+        <div class="card">
           <img
-            class="four-cards__img"
+            class="card__img"
             src="/images/placeholder.jpg"
             alt="placeholder"
           />
-          <h2>
-            Our fragile 40-years-old Banking infrastructure can only be saved
-            with AI
-          </h2>
-          <ul>
-            <li><a href="#none">Cuneyt Buyukbezci</a></li>
-            <li><a href="#none">6 hours ago </a></li>
-          </ul>
+          <div>
+            <h2 class="card__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+            <span class="card__price--old">$49</span>
+            <span class="card__price--new">$0</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__img"
+            src="/images/placeholder.jpg"
+            alt="placeholder"
+          />
+          <div>
+            <h2 class="card__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+            <span class="card__price--old">$49</span>
+            <span class="card__price--new">$0</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__img"
+            src="/images/placeholder.jpg"
+            alt="placeholder"
+          />
+          <div>
+            <h2 class="card__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+            <span class="card__price--old">$49</span>
+            <span class="card__price--new">$0</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__img"
+            src="/images/placeholder.jpg"
+            alt="placeholder"
+          />
+          <div>
+            <h2 class="card__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+            <span class="card__price--old">$49</span>
+            <span class="card__price--new">$0</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__img"
+            src="/images/placeholder.jpg"
+            alt="placeholder"
+          />
+          <div>
+            <h2 class="card__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+            <span class="card__price--old">$49</span>
+            <span class="card__price--new">$0</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__img"
+            src="/images/placeholder.jpg"
+            alt="placeholder"
+          />
+          <div>
+            <h2 class="card__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+            <span class="card__price--old">$49</span>
+            <span class="card__price--new">$0</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__img"
+            src="/images/placeholder.jpg"
+            alt="placeholder"
+          />
+          <div>
+            <h2 class="card__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+            <span class="card__price--old">$49</span>
+            <span class="card__price--new">$0</span>
+          </div>
+        </div>
+
+        <div class="card">
+          <img
+            class="card__img"
+            src="/images/placeholder.jpg"
+            alt="placeholder"
+          />
+          <div>
+            <h2 class="card__title">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            </h2>
+            <span class="card__price--old">$49</span>
+            <span class="card__price--new">$0</span>
+          </div>
         </div>
       </div>
     </section>
+    <!-- END SECTION: Latest Deals -->
 
     <!-- FOOTER -->
-    <footer class="footer" style="display: none;">
-      <div class="footer__links">
+    <footer class="footer">
+      <div id="footer-links" class="footer__links">
         <ul class="footer__social-links">
           <li>
             <a href="#none">
@@ -201,7 +356,7 @@
 
       <div class="footer__legal text--md">
         <span class="footer__legal-content">
-          <a href="">
+          <a href="#none">
             <img
               class="footer__legal-img"
               src="/images/icons/tnw-logo.svg"
@@ -219,7 +374,7 @@
 
         <span class="footer__legal-content">
           Powered by
-          <a href="">
+          <a href="#none">
             <img
               class="footer__legal-img"
               src="/images/icons/stackpath.svg"
@@ -230,5 +385,8 @@
       </div>
     </footer>
     <!-- END: FOOTER -->
+
+    <!-- SCRIPTS -->
+    <script src="/assets/nav.js"></script>
   </body>
 </html>
