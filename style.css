@@ -137,11 +137,14 @@ p {
 
 .header__logo {
   background: linear-gradient(to bottom right, #c09, var(--red) 85%);
-  cursor: pointer;
   height: 100%;
   margin-right: 10px;
   position: relative;
   width: 106px;
+}
+.header__logo:hover {
+  cursor: pointer;
+  background: url(/images/gifs/funny-gif.gif);
 }
 .header__logo img {
   /* transform: translateY(32px); */
@@ -155,6 +158,18 @@ p {
   width: 66px;
   z-index: 12;
 }
+
+.header-logo__nav-list {
+  background-color: var(--black);
+  list-style-type: none;
+  margin: 48px 0 0 0;
+  padding: 0;
+  text-align: center;
+  text-transform: capitalize;
+}
+.header-logo__nav-list a{
+  color: var(--white);
+} 
 
 .header__nav-list {
   display: none;
