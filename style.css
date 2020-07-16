@@ -77,12 +77,12 @@ p {
 */
 .section-title a {
   color: var(--red);
-  text-decoration: none;
   padding-right: 5px;
+  text-decoration: none;
 }
 .section-title__container {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 .section-title__container:hover a {
   color: var(--black);
@@ -117,6 +117,52 @@ p {
   transform: rotate(45deg);
   vertical-align: middle;
   width: 8px;
+  z-index: -1;
+}
+
+/**
+*
+* top-bar
+*
+*/
+.black-bar {
+  align-items: center;
+  background-color: #131313;
+  display: flex;
+  font-size: 13px;
+  font-weight: 500;
+  justify-content: space-between;
+  line-height: 32px;
+  max-height: 32px;
+  position: relative;
+  z-index: 2;
+}
+.black-bar__list {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.black-bar__list li:first-child {
+  margin-left: 20px;
+}
+.black-bar__list li:last-child {
+  margin-right: 20px;
+}
+.black-bar__list li {
+  margin-left: 12px;
+}
+.black-bar__list a {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.black-bar__list a:hover {
+  color: var(--white);
+}
+.black-bar__list li.active a {
+  color: var(--white);
 }
 
 /**
@@ -135,44 +181,75 @@ p {
   top: 0;
 }
 
+.header__container-1 {
+  align-items: center;
+  display: flex;
+}
 .header__logo {
   background: linear-gradient(to bottom right, #c09, var(--red) 85%);
-  height: 100%;
+  height: 48px;
   margin-right: 10px;
   position: relative;
   width: 106px;
 }
 .header__logo:hover {
-  cursor: pointer;
   background: url(/images/gifs/funny-gif.gif);
+  cursor: pointer;
+}
+.header__logo:hover .header-logo__nav {
+  height: auto;
+  transform: translateY(0);
+  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
 }
 .header__logo img {
-  /* transform: translateY(32px); */
-  /* transform .4s ease,-webkit-transform .4s ease; */
   height: 16px;
-  left: 50%;
+  left: 20%;
   margin: 0;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 0%;
+  transform: translate(0, 100%);
+  transition: 0.4s ease, -webkit-transform 0.4s ease;
   width: 66px;
-  z-index: 12;
+  z-index: 3;
 }
-
+.header-logo__nav {
+  display: none;
+  position: relative;
+  transform: translateY(-105%);
+  transition: transform 0.15s ease-in-out, -webkit-transform 0.15s ease-in-out;
+  z-index: -1;
+}
 .header-logo__nav-list {
   background-color: var(--black);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 19.5px;
   list-style-type: none;
   margin: 48px 0 0 0;
-  padding: 0;
+  padding: 4px 0;
   text-align: center;
   text-transform: capitalize;
 }
-.header-logo__nav-list a{
+.header-logo__nav-list li {
+  padding: 6px 0;
+}
+.header-logo__nav-list li:hover a {
   color: var(--white);
-} 
+}
+.header-logo__nav-list a {
+  color: hsla(0, 0%, 100%, 0.6);
+  text-decoration: none;
+}
+.header-logo__nav-list a.active {
+  color: var(--white);
+}
 
-.header__nav-list {
+.header__nav {
   display: none;
+}
+.header__nav-list {
+  display: flex;
   font-family: Shentox, sans-serif;
   font-size: 14px;
   font-weight: 500;
@@ -191,6 +268,14 @@ p {
 }
 .header__nav-list a:hover {
   color: var(--black);
+}
+@media (min-width: 768px) {
+  .header__nav {
+    display: block;
+  }
+  .header-logo__nav {
+    display: block;
+  }
 }
 
 /**
@@ -241,7 +326,7 @@ p {
 .mobile-nav-button.active .mobile-nav-button__bar:last-of-type {
   transform: rotate(-45deg) translate(0);
 }
-@media (min-width: 852px) {
+@media (min-width: 768px) {
   .mobile-nav-button {
     display: none;
   }
@@ -315,7 +400,7 @@ p {
   margin-top: 0.5em;
 }
 .mobile-nav__list a {
-  color: hsla(0, 0%, 100%, 0.6);
+  color: #aaa;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -372,11 +457,11 @@ p {
 *
 */
 .card {
+  /* margin: 0 15px; */
+  /* padding: 8px 0; */
   align-items: center;
   display: flex;
   font-family: Arial, Helvetica, sans-serif;
-  /* padding: 8px 0; */
-  /* margin: 0 15px; */
 }
 .card__img {
   height: 75px;
@@ -409,14 +494,14 @@ p {
 }
 @media (min-width: 768px) {
   .card {
+    /* margin: 8px; */
+    /* padding-right: 3px; */
+    /* width: 100%; */
     flex-wrap: wrap;
-    flex: 0 0 calc(100% / 3);
     flex: 0 0 31%;
+    flex: 0 0 calc(100% / 3);
     height: 100%;
     padding: 8px;
-    /* padding-right: 3px; */
-    /* margin: 8px; */
-    /* width: 100%; */
   }
   .card__img {
     height: 95%;
