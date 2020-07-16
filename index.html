@@ -29,7 +29,7 @@
     <title>TNW</title>
   </head>
   <body>
-    <aside class="black-bar" style="display: none;">
+    <aside class="black-bar">
       <ul class="black-bar__list">
         <li class="active">
           <a href="#none">news</a>
@@ -70,7 +70,7 @@
     <!-- HEADER -->
     <header class="header">
       <div class="header__container-1">
-        <div class="header__logo">
+        <div id="header-logo" class="header__logo">
           <a href="/">
             <img src="/images/icons/tnw-logo.svg" alt="tnw-logo" />
           </a>
@@ -225,15 +225,27 @@
     </header>
     <!-- END HEADER -->
 
+    <!-- SECTION: Intro -->
+    <section class="section-mb--lg">
+      <div class="intro">
+        <div class="intro__box-1"></div>
+
+        <div class="intro__box-2"></div>
+
+        <div class="intro__box-3"></div>
+      </div>
+    </section>
+    <!-- SECTION: Intro -->
+
     <!-- SECTION: Latest News -->
     <section class="section-mb--lg">
       <div class="container">
         <div class="section-title__container title-mb--lg">
-          <h1 class="section-title title--lg">
+          <h2 class="section-title">
             <a href="#none">
               Latest news
             </a>
-          </h1>
+          </h2>
           <span class="arrow--right"></span>
         </div>
 
@@ -245,11 +257,11 @@
               alt="placeholder-2"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__author">Matthew Beedham</span>
               <span class="card__time">36 minutes ago</span>
             </div>
@@ -262,11 +274,11 @@
               alt="placeholder-2"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__author">Matthew Beedham</span>
               <span class="card__time">36 minutes ago</span>
             </div>
@@ -279,11 +291,11 @@
               alt="placeholder-2"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__author">Matthew Beedham</span>
               <span class="card__time">36 minutes ago</span>
             </div>
@@ -296,11 +308,11 @@
               alt="placeholder-2"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__author">Matthew Beedham</span>
               <span class="card__time">36 minutes ago</span>
             </div>
@@ -313,11 +325,11 @@
               alt="placeholder-2"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__author">Matthew Beedham</span>
               <span class="card__time">36 minutes ago</span>
             </div>
@@ -330,11 +342,11 @@
               alt="placeholder-2"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__author">Matthew Beedham</span>
               <span class="card__time">36 minutes ago</span>
             </div>
@@ -347,11 +359,11 @@
               alt="placeholder-2"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__author">Matthew Beedham</span>
               <span class="card__time">36 minutes ago</span>
             </div>
@@ -364,11 +376,11 @@
               alt="placeholder-2"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__author">Matthew Beedham</span>
               <span class="card__time">36 minutes ago</span>
             </div>
@@ -378,16 +390,33 @@
     </section>
     <!-- END SECTION: Latest news -->
 
+    <!-- SECTION: Latest funding rounds on Index.co -->
+    <section>
+      <div class="container">
+        <div class="funding-card">
+          <div class="funding-card__bar--red">
+            <h4>Lorem ipsum</h4>
+          </div>
+
+          <div class="funding-card__bar--light-red">
+            <h4>$200M</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END SECTION: Latest funding rounds on Index.co -->
+
     <section class="section-mb--lg">
       <div class="container">
         <div class="article-wrapper">
+          <!-- SECTION: Hard Fork  -->
           <div class="article-column">
             <div class="section-title__container title-mb--md">
-              <h1 class="section-title title--lg">
+              <h2 class="section-title">
                 <a href="#none">
                   Hard Fork
                 </a>
-              </h1>
+              </h2>
               <span class="arrow--right"></span>
             </div>
 
@@ -399,10 +428,10 @@
               />
               <div class="article-column__img-title-container">
                 <h2 class="article-column__most-popular">most popular</h2>
-                <h2 class="article-column__img-title">
+                <h3 class="article-column__img-title">
                   We estimated how much the new braided iPhone cable will cost
                   consumers
-                </h2>
+                </h3>
                 <span class="card__author">Matthew Beedham</span>
                 <span class="card__time">36 minutes ago</span>
               </div>
@@ -411,11 +440,11 @@
             <div class="article-column__red-box__container">
               <div class="article-column__red-box">
                 <h2 class="article-column__red-box__latest">Latest</h2>
-                <h3 class="article-column__red-box__title">
+                <h5 class="article-column__red-box__title">
                   <a href="#none">
                     Twitter’s Bitcoin scam hack wiped $1B from its market value
                   </a>
-                </h3>
+                </h5>
               </div>
               <img
                 class="article-column__red-box__img"
@@ -457,14 +486,16 @@
               </li>
             </ul>
           </div>
+          <!-- END SECTION: Hard Fork -->
 
+          <!-- SECTION: Apps -->
           <div class="article-column">
             <div class="section-title__container title-mb--md">
-              <h1 class="section-title title--lg">
+              <h2 class="section-title">
                 <a href="#none">
                   Apps
                 </a>
-              </h1>
+              </h2>
               <span class="arrow--right"></span>
             </div>
 
@@ -476,10 +507,10 @@
               />
               <div class="article-column__img-title-container">
                 <h2 class="article-column__most-popular">most popular</h2>
-                <h2 class="article-column__img-title">
+                <h3 class="article-column__img-title">
                   We estimated how much the new braided iPhone cable will cost
                   consumers
-                </h2>
+                </h3>
                 <span class="card__author">Matthew Beedham</span>
                 <span class="card__time">36 minutes ago</span>
               </div>
@@ -488,11 +519,11 @@
             <div class="article-column__red-box__container">
               <div class="article-column__red-box">
                 <h2 class="article-column__red-box__latest">Latest</h2>
-                <h3 class="article-column__red-box__title">
+                <h5 class="article-column__red-box__title">
                   <a href="#none">
                     Twitter’s Bitcoin scam hack wiped $1B from its market value
                   </a>
-                </h3>
+                </h5>
               </div>
               <img
                 class="article-column__red-box__img"
@@ -534,14 +565,16 @@
               </li>
             </ul>
           </div>
+          <!-- END SECTION: Apps -->
 
+          <!-- SECTION: Gear -->
           <div class="article-column">
             <div class="section-title__container title-mb--md">
-              <h1 class="section-title title--lg">
+              <h2 class="section-title">
                 <a href="#none">
                   Gear
                 </a>
-              </h1>
+              </h2>
               <span class="arrow--right"></span>
             </div>
 
@@ -553,10 +586,10 @@
               />
               <div class="article-column__img-title-container">
                 <h2 class="article-column__most-popular">most popular</h2>
-                <h2 class="article-column__img-title">
+                <h3 class="article-column__img-title">
                   We estimated how much the new braided iPhone cable will cost
                   consumers
-                </h2>
+                </h3>
                 <span class="card__author">Matthew Beedham</span>
                 <span class="card__time">36 minutes ago</span>
               </div>
@@ -565,11 +598,11 @@
             <div class="article-column__red-box__container">
               <div class="article-column__red-box">
                 <h2 class="article-column__red-box__latest">Latest</h2>
-                <h3 class="article-column__red-box__title">
+                <h5 class="article-column__red-box__title">
                   <a href="#none">
                     Twitter’s Bitcoin scam hack wiped $1B from its market value
                   </a>
-                </h3>
+                </h5>
               </div>
               <img
                 class="article-column__red-box__img"
@@ -611,14 +644,16 @@
               </li>
             </ul>
           </div>
+          <!-- END SECTION: Gear -->
 
+          <!-- SECTION: Tech -->
           <div class="article-column">
             <div class="section-title__container title-mb--md">
-              <h1 class="section-title title--lg">
+              <h2 class="section-title">
                 <a href="#none">
                   Tech
                 </a>
-              </h1>
+              </h2>
               <span class="arrow--right"></span>
             </div>
 
@@ -630,10 +665,10 @@
               />
               <div class="article-column__img-title-container">
                 <h2 class="article-column__most-popular">most popular</h2>
-                <h2 class="article-column__img-title">
+                <h3 class="article-column__img-title">
                   We estimated how much the new braided iPhone cable will cost
                   consumers
-                </h2>
+                </h3>
                 <span class="card__author">Matthew Beedham</span>
                 <span class="card__time">36 minutes ago</span>
               </div>
@@ -642,11 +677,11 @@
             <div class="article-column__red-box__container">
               <div class="article-column__red-box">
                 <h2 class="article-column__red-box__latest">Latest</h2>
-                <h3 class="article-column__red-box__title">
+                <h5 class="article-column__red-box__title">
                   <a href="#none">
                     Twitter’s Bitcoin scam hack wiped $1B from its market value
                   </a>
-                </h3>
+                </h5>
               </div>
               <img
                 class="article-column__red-box__img"
@@ -688,14 +723,16 @@
               </li>
             </ul>
           </div>
+          <!-- END SECTION: Tech -->
 
+          <!-- SECTION: Creative -->
           <div class="article-column">
             <div class="section-title__container title-mb--md">
-              <h1 class="section-title title--lg">
+              <h2 class="section-title">
                 <a href="#none">
                   Creative
                 </a>
-              </h1>
+              </h2>
               <span class="arrow--right"></span>
             </div>
 
@@ -707,10 +744,10 @@
               />
               <div class="article-column__img-title-container">
                 <h2 class="article-column__most-popular">most popular</h2>
-                <h2 class="article-column__img-title">
+                <h3 class="article-column__img-title">
                   We estimated how much the new braided iPhone cable will cost
                   consumers
-                </h2>
+                </h3>
                 <span class="card__author">Matthew Beedham</span>
                 <span class="card__time">36 minutes ago</span>
               </div>
@@ -719,11 +756,11 @@
             <div class="article-column__red-box__container">
               <div class="article-column__red-box">
                 <h2 class="article-column__red-box__latest">Latest</h2>
-                <h3 class="article-column__red-box__title">
+                <h5 class="article-column__red-box__title">
                   <a href="#none">
                     Twitter’s Bitcoin scam hack wiped $1B from its market value
                   </a>
-                </h3>
+                </h5>
               </div>
               <img
                 class="article-column__red-box__img"
@@ -765,14 +802,16 @@
               </li>
             </ul>
           </div>
+          <!-- END SECTION: Creative -->
 
+          <!-- SECTION: Podium -->
           <div class="article-column">
             <div class="section-title__container title-mb--md">
-              <h1 class="section-title title--lg">
+              <h2 class="section-title">
                 <a href="#none">
                   Podium
                 </a>
-              </h1>
+              </h2>
               <span class="arrow--right"></span>
             </div>
 
@@ -784,10 +823,10 @@
               />
               <div class="article-column__img-title-container">
                 <h2 class="article-column__most-popular">most popular</h2>
-                <h2 class="article-column__img-title">
+                <h3 class="article-column__img-title">
                   We estimated how much the new braided iPhone cable will cost
                   consumers
-                </h2>
+                </h3>
                 <span class="card__author">Matthew Beedham</span>
                 <span class="card__time">36 minutes ago</span>
               </div>
@@ -796,11 +835,11 @@
             <div class="article-column__red-box__container">
               <div class="article-column__red-box">
                 <h2 class="article-column__red-box__latest">Latest</h2>
-                <h3 class="article-column__red-box__title">
+                <h5 class="article-column__red-box__title">
                   <a href="#none">
                     Twitter’s Bitcoin scam hack wiped $1B from its market value
                   </a>
-                </h3>
+                </h5>
               </div>
               <img
                 class="article-column__red-box__img"
@@ -842,14 +881,16 @@
               </li>
             </ul>
           </div>
+          <!-- END SECTION: Podium -->
 
+          <!-- SECTION: Insights -->
           <div class="article-column">
             <div class="section-title__container title-mb--md">
-              <h1 class="section-title title--lg">
+              <h2 class="section-title">
                 <a href="#none">
                   Insights
                 </a>
-              </h1>
+              </h2>
               <span class="arrow--right"></span>
             </div>
 
@@ -861,10 +902,10 @@
               />
               <div class="article-column__img-title-container">
                 <h2 class="article-column__most-popular">most popular</h2>
-                <h2 class="article-column__img-title">
+                <h3 class="article-column__img-title">
                   We estimated how much the new braided iPhone cable will cost
                   consumers
-                </h2>
+                </h3>
                 <span class="card__author">Matthew Beedham</span>
                 <span class="card__time">36 minutes ago</span>
               </div>
@@ -873,11 +914,11 @@
             <div class="article-column__red-box__container">
               <div class="article-column__red-box">
                 <h2 class="article-column__red-box__latest">Latest</h2>
-                <h3 class="article-column__red-box__title">
+                <h5 class="article-column__red-box__title">
                   <a href="#none">
                     Twitter’s Bitcoin scam hack wiped $1B from its market value
                   </a>
-                </h3>
+                </h5>
               </div>
               <img
                 class="article-column__red-box__img"
@@ -919,14 +960,16 @@
               </li>
             </ul>
           </div>
+          <!-- END SECTION: Insights -->
 
+          <!-- SECTION: Launch -->
           <div class="article-column">
             <div class="section-title__container title-mb--md">
-              <h1 class="section-title title--lg">
+              <h2 class="section-title">
                 <a href="#none">
                   Launch
                 </a>
-              </h1>
+              </h2>
               <span class="arrow--right"></span>
             </div>
 
@@ -938,10 +981,10 @@
               />
               <div class="article-column__img-title-container">
                 <h2 class="article-column__most-popular">most popular</h2>
-                <h2 class="article-column__img-title">
+                <h3 class="article-column__img-title">
                   We estimated how much the new braided iPhone cable will cost
                   consumers
-                </h2>
+                </h3>
                 <span class="card__author">Matthew Beedham</span>
                 <span class="card__time">36 minutes ago</span>
               </div>
@@ -950,11 +993,11 @@
             <div class="article-column__red-box__container">
               <div class="article-column__red-box">
                 <h2 class="article-column__red-box__latest">Latest</h2>
-                <h3 class="article-column__red-box__title">
+                <h5 class="article-column__red-box__title">
                   <a href="#none">
                     Twitter’s Bitcoin scam hack wiped $1B from its market value
                   </a>
-                </h3>
+                </h5>
               </div>
               <img
                 class="article-column__red-box__img"
@@ -996,14 +1039,16 @@
               </li>
             </ul>
           </div>
+          <!-- END SECTION: Launch -->
 
+          <!-- SECTION: Distract -->
           <div class="article-column">
             <div class="section-title__container title-mb--md">
-              <h1 class="section-title title--lg">
+              <h2 class="section-title">
                 <a href="#none">
                   Distract
                 </a>
-              </h1>
+              </h2>
               <span class="arrow--right"></span>
             </div>
 
@@ -1015,10 +1060,10 @@
               />
               <div class="article-column__img-title-container">
                 <h2 class="article-column__most-popular">most popular</h2>
-                <h2 class="article-column__img-title">
+                <h3 class="article-column__img-title">
                   We estimated how much the new braided iPhone cable will cost
                   consumers
-                </h2>
+                </h3>
                 <span class="card__author">Matthew Beedham</span>
                 <span class="card__time">36 minutes ago</span>
               </div>
@@ -1027,11 +1072,11 @@
             <div class="article-column__red-box__container">
               <div class="article-column__red-box">
                 <h2 class="article-column__red-box__latest">Latest</h2>
-                <h3 class="article-column__red-box__title">
+                <h5 class="article-column__red-box__title">
                   <a href="#none">
                     Twitter’s Bitcoin scam hack wiped $1B from its market value
                   </a>
-                </h3>
+                </h5>
               </div>
               <img
                 class="article-column__red-box__img"
@@ -1074,6 +1119,7 @@
             </ul>
           </div>
         </div>
+        <!-- END SECTION: Distract -->
       </div>
     </section>
 
@@ -1084,11 +1130,11 @@
           class="d-flex justify-content-between align-items-baseline title-mb--lg w-100"
         >
           <div class="section-title__container">
-            <h1 class="section-title title--lg">
+            <h2 class="section-title">
               <a href="#none">
                 Latest deals
               </a>
-            </h1>
+            </h2>
             <span class="arrow--right"></span>
           </div>
 
@@ -1105,13 +1151,11 @@
               alt="placeholder"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
-                  <a href="#none">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                  </a>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__price--old">$49</span>
               <span class="card__price--new">$0</span>
             </div>
@@ -1124,11 +1168,11 @@
               alt="placeholder"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__price--old">$49</span>
               <span class="card__price--new">$0</span>
             </div>
@@ -1141,11 +1185,11 @@
               alt="placeholder"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__price--old">$49</span>
               <span class="card__price--new">$0</span>
             </div>
@@ -1158,11 +1202,11 @@
               alt="placeholder"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__price--old">$49</span>
               <span class="card__price--new">$0</span>
             </div>
@@ -1175,11 +1219,11 @@
               alt="placeholder"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__price--old">$49</span>
               <span class="card__price--new">$0</span>
             </div>
@@ -1192,11 +1236,11 @@
               alt="placeholder"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__price--old">$49</span>
               <span class="card__price--new">$0</span>
             </div>
@@ -1209,11 +1253,11 @@
               alt="placeholder"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__price--old">$49</span>
               <span class="card__price--new">$0</span>
             </div>
@@ -1226,11 +1270,11 @@
               alt="placeholder"
             />
             <div>
-              <h2 class="card__title">
+              <h4 class="card__title">
                 <a href="#none">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit
                 </a>
-              </h2>
+              </h4>
               <span class="card__price--old">$49</span>
               <span class="card__price--new">$0</span>
             </div>

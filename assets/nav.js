@@ -10,3 +10,14 @@ mobileNavButton.addEventListener("click", (e) => {
   body.classList.toggle("no-scroll");
   footerLinks.classList.toggle("mobile-nav-active");
 });
+
+let headerLogo = document.getElementById("header-logo");
+let scrollPosY = window.scrollY;
+window.addEventListener("scroll", (e) => {
+  scrollPosY = window.scrollY;
+  if (scrollPosY > 0) {
+    headerLogo.classList.add("active");
+  } else {
+    headerLogo.classList.remove("active");
+  }
+});
