@@ -1,4 +1,12 @@
 :root {
+  --black-gradient: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgb(35, 35, 35, 0.5) 50%,
+      rgba(0, 0, 0, 0.8) 75%,
+      rgba(0, 0, 0) 100%
+    )
+    100%;
   --black: #000;
   --dark-gray: #333;
   --gray: #555;
@@ -44,6 +52,13 @@ h5 {
   font-size: 14px;
   font-weight: 700;
   line-height: 17.5px;
+}
+h6 {
+  font-family: Shentox, sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 17px;
+  text-transform: uppercase;
 }
 
 ul {
@@ -266,7 +281,7 @@ h6 = xs
   transform: translate(0, 100%);
   transition: 0.4s ease, -webkit-transform 0.4s ease;
   width: 66px;
-  z-index: 3;
+  z-index: 9999;
 }
 .header-logo__nav {
   display: none;
@@ -347,32 +362,124 @@ h6 = xs
 *
 */
 .intro {
-  display: none; /* TODO: TEMPORARY REMOVE LATER */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 8px;
+  row-gap: 8px;
 }
-@media (min-width: 1600px) {
+.intro__box-logo {
+  display: none;
+}
+.intro__box-content {
+  bottom: 0;
+  color: var(--white);
+  padding: 14px 12px;
+  position: absolute;
+}
+.intro__box-content-title {
+  font-family: Avalon, sans-serif;
+  font-size: 20px;
+  line-height: 20px;
+}
+.intro__box-content-category {
+  font-family: Shentox, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  text-transform: uppercase;
+}
+.intro__box-content-details {
+  color: hsla(0, 0%, 100%, 0.6);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+}
+.intro__box-1,
+.intro__box-2,
+.intro__box-3 {
+  cursor: pointer;
+  min-height: 30vh;
+  position: relative;
+}
+.intro__box-1 {
+  background: var(--black-gradient),
+    url(/images/intro-placeholder.png) center / cover no-repeat;
+}
+.intro__box-2 {
+  background: var(--black-gradient),
+    url(/images/intro-placeholder.png) center / cover no-repeat;
+}
+.intro__box-3 {
+  background: var(--black-gradient),
+    url(/images/intro-placeholder.png) center / cover no-repeat;
+}
+@media (min-width: 768px) {
   .intro {
-    height: 60vh;
-    max-height: 560px;
-    padding: 8px;
-    display: grid;
-    row-gap: 8px;
     column-gap: 8px;
-    grid-template-columns: 65% 35%;
     grid-auto-rows: 50%;
-    /* grid-template-rows: 100% ; */
+    grid-template-columns: 65% 35%;
+    margin: 0 8px;
+    min-height: 50vh;
+    padding: 8px 8px 0 0;
+    row-gap: 8px;
   }
+
   .intro__box-1 {
-    background-color: yellow;
   }
   .intro__box-2 {
-    background-color: aqua;
-    grid-row-start: 1;
     grid-row-end: 3;
+    grid-row-start: 1;
   }
   .intro__box-3 {
-    background-color: red;
+    grid-row-end: 2;
+    grid-row-start: 2;
+  }
+}
+@media (min-width: 1024px) {
+  .intro {
+    column-gap: 8px;
+    display: grid;
+    grid-auto-rows: 50%;
+    grid-template-columns: 65% 35%;
+    height: 60vh;
+    max-height: 536px;
+    padding: 8px;
+    row-gap: 8px;
+  }
+  .intro__box-1 {
+    background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgb(35, 35, 35, 0.6) 50%,
+        rgba(0, 0, 0, 0.8) 75%,
+        rgba(0, 0, 0) 100%
+      ),
+      linear-gradient(
+        170deg,
+        rgba(251, 72, 39, 1) 0%,
+        rgba(251, 72, 39, 0.8) 35%,
+        rgba(254, 139, 90, 0.3) 50%
+      ),
+      url(/images/intro-placeholder.png) center / cover no-repeat;
+    grid-row-end: 3;
+    grid-row-start: 1;
+  }
+  .intro__box-2 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .intro__box-3 {
     grid-row-start: 2;
     grid-row-end: 2;
+  }
+  .intro__box-logo {
+    display: block;
+    height: 112px;
+    left: 22px;
+    position: absolute;
+    top: 22px;
+    width: 417px;
   }
 }
 
@@ -384,6 +491,11 @@ h6 = xs
 .funding-card {
   background-color: rgba(255, 68, 34, 0.03);
 }
+.funding-card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 16px;
+}
 .funding-card__bar--light-red,
 .funding-card__bar--red {
   font-family: Avalon, sans-serif;
@@ -391,9 +503,48 @@ h6 = xs
 }
 .funding-card__bar--red {
   background-color: var(--red);
+  color: var(--white);
+  position: relative;
 }
 .funding-card__bar--light-red {
   background-color: rgba(255, 68, 34, 0.08);
+}
+.funding-card__list {
+  list-style-type: none;
+  text-transform: capitalize;
+}
+.funding-card__list li {
+  padding: 0 16px 16px;
+}
+.funding-card__list li:first-child {
+  padding-top: 16px;
+}
+.funding-card__list li:last-child {
+  border-top: 1px solid rgba(255, 68, 34, 0.25);
+  padding: 10px 16px 16px 16px;
+  text-transform: none;
+}
+.funding-card__img {
+  height: 60px;
+  left: 0;
+  margin: calc(32px / 3);
+  position: absolute;
+  top: 0;
+  width: 60px;
+}
+@media (min-width: 768px) {
+  .funding-card__wrapper {
+    column-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .funding-card__wrapper {
+    column-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 0;
+  }
 }
 
 /**
@@ -517,7 +668,7 @@ h6 = xs
   margin-top: 0.5em;
 }
 .mobile-nav__list a {
-  color: var(--light-gray);
+  color: hsla(0, 0%, 100%, 0.6);
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -561,16 +712,17 @@ h6 = xs
   /* reserved */
 }
 .article-column__img {
-  height: 220px;
+  height: 276px;
   max-width: 100%;
-  width: 100%;
   object-fit: cover;
   position: relative;
+  width: 100%;
   z-index: -1;
 }
 .article-column__img-gradient {
-  position: relative;
   background: linear-gradient(to bottom, transparent 50%, var(--black) 95%);
+  margin-bottom: 2px;
+  position: relative;
 }
 .article-column__img-title {
   /* reserved */
@@ -706,11 +858,11 @@ h6 = xs
 }
 .card__author,
 .card__time {
+  color: var(--light-gray);
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
-  line-height: 20px;
   font-weight: 400;
-  color: var(--light-gray);
+  line-height: 20px;
 }
 .card__time {
   display: inline list-item;
@@ -767,13 +919,13 @@ h6 = xs
 
 .footer__links {
   background-color: #131313;
-  padding: 48px 20px 32px;
+  padding: 42px 20px 30px;
 }
 
 .footer__legal {
   background-color: var(--black);
   color: var(--light-gray);
-  padding: 3rem 0;
+  padding: 40px 0;
   text-align: center;
 }
 .footer__legal-content {
